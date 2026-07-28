@@ -170,7 +170,7 @@ api.getProjectByFilePath('D:\\path');                     // => { project, envir
 
 ## 特殊项目文档
 
-部分项目前端不基于 h0 但后端基于 h0，多语言机制不同。专属说明在 `doc/{project}/`：`doc/openplatform/README.md`（开放平台）。**操作某项目前（根据 fileProjectMap 确定项目），若 `doc/{project}/` 存在，必须先读其说明并以其为准**，通用 `doc/intl.md` 仅作补充。
+部分项目前端不基于 h0 或有特殊多语言场景，多语言机制不同。专属说明在 `doc/{project}/`：`doc/openplatform/README.md`（开放平台）、`doc/hskp-console/README.md`（零衍）。**操作某项目前（根据 fileProjectMap 确定项目），若 `doc/{project}/` 存在，必须先读其说明并以其为准**，通用 `doc/intl.md` 仅作补充。
 
 ## File Reference
 
@@ -182,6 +182,7 @@ api.getProjectByFilePath('D:\\path');                     // => { project, envir
 - `doc/api.md` - 接口文档（路径/参数/返回/错误码）
 - `doc/h0.md` / `doc/intl.md` - h0 平台与多语言规范
 - `doc/openplatform/README.md` - 开放平台多语言说明
+- `doc/hskp-console/README.md` - 零衍多语言说明
 - `commands/*/workflow.md` - 各命令详细流程
 - `config/workflow.md` - 环境配置流程
 - `capabilities/*.md` - 各能力详细流程
