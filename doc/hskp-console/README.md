@@ -5,6 +5,7 @@
 ## 项目定位
 
 - 零衍门户前端，技术栈 umi + React 16 + Choerodon UI (c7n) + mobx
+- **登录前门户与登录后门户都在 `packages/hskp-front-console-portal` 包下**（后门户也用此包，不另起包）；前门户入口唯一：`packages/hskp-front-console-portal/src/pages/BeforeHome`，后门户入口为同包 `src/components/PortalPage`。i18n 扫描/检查时扫此包即可覆盖两套场景
 - **前端基于 h0**（使用 hzero-front 的 `utils/intl`），后端基于 h0 平台
 - 底层使用 `react-intl-universal`，上层封装出 `intl.get(key).d(default)` API
 - 多语言文案存储在 h0 平台多语言（hpfm 服务），promptKey 前缀 `hskp.*`
