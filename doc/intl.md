@@ -15,7 +15,7 @@ intl.get('hskp.common.create').d('Create')
 intl.get('hskp.product.assignUser.view.userGroup').d('用户组')
 ```
 
-- `.d()` 函数中可以使用中文或英文，由项目决定
+- `.d()` 函数中可以使用中文或英文，**语言由 defaultLanguage 决定**（zh_CN->中文，en_US->英文）；`.d()` 是多语言未加载时的 fallback 默认显示值
 - `get()` 函数中存放多语言的 code
 - `.d()` 存放默认值，即当前多语言 code 在平台多语言中不存在时使用的默认显示值
 

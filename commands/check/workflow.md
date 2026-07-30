@@ -193,6 +193,7 @@ const getColumns = () => [
 - 读 `.env.json` 当前项目的 `defaultLanguage`
 - 提取每个 `intl.get().d()` 默认值，判断语言（含 CJK -> 中文，否则英文）
 - `zh_CN` -> `.d()` 应为中文；`en_US` -> 应为英文
+- ⚠️ **生成 .d() 建议值必须严格按 defaultLanguage**：defaultLanguage=en_US 时建议值必须英文（不得给中文），defaultLanguage=zh_CN 时必须中文。这是 .d() 建议值语言唯一依据，不得凭"项目约定英文"或其他理由偏离
 - 不一致列入 data.json（含文件、行号、key、当前值、当前语言、期望语言）
 - 模板字符串（如 `` `共 ${total} 条` ``）按主体文字判断，变量占位符不影响
 - `.d()` 无值或空字符串：提示缺失默认值

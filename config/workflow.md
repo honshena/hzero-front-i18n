@@ -55,7 +55,7 @@
   - **中文（zh_CN）**（推荐）：新增条目时 `.d()` 默认值用中文、检查/翻译主语言为中文
   - **英文（en_US）**：`.d()` 默认值用英文
   - 自定义输入：用户可输入其他语言代码（如 `ja_JP`、`th_TH`）
-- `defaultLanguage` 决定新增条目 `.d()` 默认值语言、检查时的主语言等
+- `defaultLanguage` 决定新增条目 `.d()` 默认值语言、检查时的主语言等。⚠️ **后续所有 .d() 建议值严格按此 defaultLanguage 生成**（en_US->英文，zh_CN->中文），不得偏离
 
 ### Step 6: 写入 .env.json
 - 将配置写入 `projects.{项目名}.environments.{环境名}`
