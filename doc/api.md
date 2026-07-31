@@ -198,8 +198,8 @@ await api.updatePrompt({
 | 方法 | `POST` |
 | 路径 | `/hpfm/v1/prompts/refresh/cache` |
 | 用途 | 刷新多语言缓存 |
-| body | 数组，如 `[ { promptKey, promptCode } ]` |
-| 返回 | 操作结果 |
+| body | 无（不需要带参数） |
+| 返回 | 204（`{ success: true }`） |
 
 ### exportPrompts - 导出多语言
 

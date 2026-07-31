@@ -184,8 +184,8 @@ async function deletePrompt(data, projectName = null, environmentName = null) {
   return request('DELETE', '/hpfm/v1/prompts/remove', data, projectName, environmentName);
 }
 
-async function refreshCache(data = [], projectName = null, environmentName = null) {
-  return request('POST', '/hpfm/v1/prompts/refresh/cache', data, projectName, environmentName);
+async function refreshCache(projectName = null, environmentName = null) {
+  return request('POST', '/hpfm/v1/prompts/refresh/cache', null, projectName, environmentName);
 }
 
 async function getUserSelf(projectName = null, environmentName = null) {
