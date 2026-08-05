@@ -74,7 +74,7 @@
 ```json
 {
   "fileProjectMap": {
-    "D:\\Mine\\Projects\\Work\\hskp-front-console\\packages\\hskp-front-console-platform": {
+    "<项目根路径>/packages/hskp-front-console-platform": {
       "project": "hskp-console",
       "environment": "dev"
     }
